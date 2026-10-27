@@ -1,0 +1,67 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+#include "FirstPerson415Projectile.generated.h"
+
+class USphereComponent;
+class UProjectileMovementComponent;
+class UNiagaraSystem;
+
+UCLASS(config=Game)
+class AFirstPerson415Projectile : public AActor
+{
+	GENERATED_BODY()
+
+	/** Sphere collision component */
+	UPROPERTY(VisibleDefaultsOnly, Category=Projectile)
+	USphereComponent* CollisionComp;
+
+	/** Projectile movement component */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
+	UProjectileMovementComponent* ProjectileMovement;
+	
+	// Store the projectile mesh and materials used to display
+	// the projectile and its splatter effects.
+	UPROPERTY(EditAnywhere)
+		UStaticMeshComponent* ballMesh;
+	
+	UPROPERTY(EditAnywhere)
+		UMaterial* baseMat;
+	
+	// Store the randomly generated projectile color and dynamic material
+	// so the projectile, decal, and Niagara particles can share the same color.
+	UPROPERTY()
+		FLinearColor randColor;
+
+	UPROPERTY(EditAnywhere)
+		UMaterialInterface* projMat;
+
+	UPROPERTY()
+		UMaterialInstanceDynamic* dmiMat;
+
+	UPROPERTY(EditAnywhere)
+		UNiagaraSystem* colorP;
+
+
+
+public:
+	AFirstPerson415Projectile();
+
+protected:
+	virtual void BeginPlay();
+
+public:
+
+	/** called when projectile hits something */
+	UFUNCTION()
+	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
+
+	/** Returns CollisionComp subobject **/
+	USphereComponent* GetCollisionComp() const { return CollisionComp; }
+	/** Returns ProjectileMovement subobject **/
+	UProjectileMovementComponent* GetProjectileMovement() const { return ProjectileMovement; }
+};
+
