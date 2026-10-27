@@ -12,15 +12,47 @@ A collection of Unreal Engine 5.4 coursework experiments involving C++ gameplay 
 - **Portal experiment:** C++ overlap detection teleports the player between linked portals, with a brief cooldown and scene-capture updates.
 - **Additional mesh experiments:** C++ procedural plane generation and static-to-procedural mesh conversion.
 
+## Gameplay gallery
+
+Screenshots captured from the tested Unreal Engine 5.4 portfolio copy. These show prototype systems and technical experiments rather than a finished game.
+
+### Dynamic material and particle interaction
+
+**Before interaction**
+
+![Dynamic material demonstration before interaction](01-dynamic-material-before.png)
+
+**Particle response**
+
+![Colored particle response during the dynamic material demonstration](02-dynamic-material-particles.png)
+
+### Color-synchronized projectile impacts
+
+The C++ projectile logic coordinates randomized impact colors across splatter decals and Niagara effects.
+
+![Multiple colored projectile splatter decals on a test wall](03-projectile-splatter-decals.png)
+
+### Linked portal experiment
+
+![Portal displaying the connected scene](04-portal-view.png)
+
+![View into the linked portal area](05-linked-portal-area.png)
+
+### Procedural terrain demonstration
+
+[Watch the procedural terrain demonstration (MP4, approximately 17.7 MB)](Demonstration.mp4)
+
+The accompanying video demonstrates the procedural terrain experiment in motion.
+
 ## Implementation details
 
 | System | Representative source |
 | --- | --- |
-| Projectiles, decals, Niagara color synchronization | `Source/FirstPerson415/FirstPerson415Projectile.cpp` |
-| Dynamic material parameter changes | `Source/FirstPerson415/CubeDMIMod.cpp` |
-| Perlin terrain generation and impact deformation | `Source/FirstPerson415/PerlinProcTerrain.cpp` |
-| Portal overlap and scene capture | `Source/FirstPerson415/Portal.cpp` |
-| Procedural mesh generation | `Source/FirstPerson415/ProcPlane.cpp` and `ProcMeshFromStatic.cpp` |
+| Projectiles, decals, Niagara color synchronization | [`FirstPerson415Projectile.cpp`](Source/FirstPerson415/FirstPerson415Projectile.cpp) |
+| Dynamic material parameter changes | [`CubeDMIMod.cpp`](Source/FirstPerson415/CubeDMIMod.cpp) |
+| Perlin terrain generation and impact deformation | [`PerlinProcTerrain.cpp`](Source/FirstPerson415/PerlinProcTerrain.cpp) |
+| Portal overlap and scene capture | [`Portal.cpp`](Source/FirstPerson415/Portal.cpp) |
+| Procedural mesh generation | [`ProcPlane.cpp`](Source/FirstPerson415/ProcPlane.cpp) and [`ProcMeshFromStatic.cpp`](Source/FirstPerson415/ProcMeshFromStatic.cpp) |
 
 ## Technology
 
@@ -48,7 +80,7 @@ This repository originates from GAM-415 coursework. The first-person template an
 - [x] Confirm that Git LFS-managed assets are available in the tested clean private copy
 - [x] Verify UE 5.4 C++ build and test the projectile, portal, and terrain showcase systems
 - [ ] Confirm the origin and rights of any included non-original assets
-- [ ] Capture screenshots and, ideally, short gameplay clips of working mechanics
+- [x] Capture screenshots and a short demonstration video of working mechanics
 - [x] Create a separate private clean-history portfolio repository
 - [ ] Confirm school-assignment timing and permissions before any public release
 
