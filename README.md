@@ -37,7 +37,7 @@ A collection of Unreal Engine 5.4 coursework experiments involving C++ gameplay 
 3. Open `FirstPerson415.uproject` and allow Unreal to generate/build project files if prompted.
 4. Inspect the available maps (`FirstPersonMap`, `PortalMAP`, and `ProcTerrainMAP`) and test their relevant mechanics.
 
-**Verification pending:** The portfolio copy has not yet been independently rebuilt and tested. Specific demonstrations may require configured Blueprint assets or level placement.
+**Local verification completed:** The author opened and compiled this clean portfolio copy in Unreal Engine 5.4, confirmed that FirstPersonMap loads and shooting works, verified projectile colors, decals and splatter effects, tested linked portals in PortalMAP, and confirmed procedural terrain generation and projectile-driven deformation in ProcTerrainMAP.
 
 ## Origin and attribution
 
@@ -45,11 +45,11 @@ This repository originates from GAM-415 coursework. The first-person template an
 
 ## Publication checklist
 
-- [ ] Confirm that all Git LFS objects are present in the clean private copy
-- [ ] Verify UE 5.4 C++ build and test each showcase system
+- [x] Confirm that Git LFS-managed assets are available in the tested clean private copy
+- [x] Verify UE 5.4 C++ build and test the projectile, portal, and terrain showcase systems
 - [ ] Confirm the origin and rights of any included non-original assets
 - [ ] Capture screenshots and, ideally, short gameplay clips of working mechanics
-- [ ] Create a separate private clean-history portfolio repository
+- [x] Create a separate private clean-history portfolio repository
 - [ ] Confirm school-assignment timing and permissions before any public release
 
 **Keep private until explicitly approved.**
