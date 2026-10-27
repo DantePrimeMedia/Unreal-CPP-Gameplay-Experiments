@@ -71,9 +71,24 @@ The accompanying video demonstrates the procedural terrain experiment in motion.
 
 **Local verification completed:** The author opened and compiled this clean portfolio copy in Unreal Engine 5.4, confirmed that FirstPersonMap loads and shooting works, verified projectile colors, decals and splatter effects, tested linked portals in PortalMAP, and confirmed procedural terrain generation and projectile-driven deformation in ProcTerrainMAP.
 
-## Origin and attribution
+## Origin, asset provenance, and attribution
 
-This repository originates from GAM-415 coursework. The first-person template and associated template assets originated with Epic Games; C++ coursework additions and experiment-specific content are presented for technical demonstration. Epic and any other third-party content remain subject to their respective licenses. The exact redistribution status of binary template assets must be reviewed before making a source repository public.
+This is an independently prepared portfolio copy of work completed for SNHU GAM-415, using the Unreal Engine 5.4 first-person project template as a starting point. The C++ gameplay experiments and coursework-specific materials, particles, portal assets, procedural assets, and replacement splat texture were created by the student. The student confirms that no Fab, Marketplace, Quixel, or other downloaded third-party asset packs were imported.
+
+**Epic Games template assets:** `Content/FPWeapon/`, `Content/FirstPerson/`, `Content/FirstPersonArms/`, and `Content/LevelPrototyping/` include Epic-provided template content or template-derived assets. The project also contains template-based maps and C++ foundations. These are not claimed as original student creations. Unreal Engine and associated Epic content remain subject to Epic's applicable terms.
+
+**Splat texture:** `Content/Splat/Splats.uasset` is the student's original replacement atlas. The instructor-provided splatter image was replaced before this separate repository's fresh initial commit. No standalone copy of the instructor's PNG was found in the current repository tree; embedded texture provenance has not been independently verified.
+
+**License distinction:** Epic's Unreal Engine EULA defines *Examples* as material from Samples and Templates in the engine installation and permits redistribution of Examples in source or object form (Section 5(b)). *Starter Content* is defined separately, and Fab/Marketplace Licensed Content may carry additional source-redistribution restrictions. The template-looking assets in this repository have **not** been individually traced to their original installation or licensing category. Do not assume that every binary asset is cleared for public source distribution.
+
+Official references:
+- [Unreal Engine EULA](https://www.unrealengine.com/en-US/eula/unreal), particularly Sections 1, 4, and 5(b)
+- [Epic Content License Agreement](https://www.unrealengine.com/en-US/eula/content)
+- [Unreal Engine Templates Reference](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-templates-reference)
+
+### Publication safeguards
+
+This repository is currently **private**. Before changing visibility, confirm the provenance of any ambiguous template or Starter Content assets and any school-specific restrictions. If a binary asset cannot be cleared, prepare a separate public-facing source-only showcase or remove/replace that asset in a tested publication branch rather than deleting dependencies from the working project.
 
 ## Publication checklist
 
