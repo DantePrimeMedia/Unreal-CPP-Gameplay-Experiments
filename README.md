@@ -1,6 +1,6 @@
 # Unreal Engine 5.4 — C++ Gameplay and Visual Effects Experiments
 
-**Portfolio preparation copy — not yet approved for publication**
+**Public gameplay programming portfolio project**
 
 A collection of Unreal Engine 5.4 coursework experiments involving C++ gameplay systems, projectile impact effects, dynamic materials, procedural meshes, and portal mechanics. These are **technical demonstrations**, not a completed commercial game.
 
@@ -86,9 +86,9 @@ Official references:
 - [Epic Content License Agreement](https://www.unrealengine.com/en-US/eula/content)
 - [Unreal Engine Templates Reference](https://dev.epicgames.com/documentation/en-us/unreal-engine/unreal-engine-templates-reference)
 
-### Publication safeguards
+### Public repository and rights review
 
-This repository is currently **private**. Before changing visibility, confirm the provenance of any ambiguous template or Starter Content assets and any school-specific restrictions. If a binary asset cannot be cleared, prepare a separate public-facing source-only showcase or remove/replace that asset in a tested publication branch rather than deleting dependencies from the working project.
+This clean-history portfolio repository is **public**. Public visibility does not itself establish license or academic redistribution clearance. The provenance of ambiguous template or Starter Content assets and any school-specific restrictions should still be confirmed. If an asset is found to be unsuitable for public source distribution, replace or remove it safely in a tested revision, or publish a source-only showcase instead of deleting dependencies blindly.
 
 ## Publication checklist
 
@@ -96,7 +96,8 @@ This repository is currently **private**. Before changing visibility, confirm th
 - [x] Verify UE 5.4 C++ build and test the projectile, portal, and terrain showcase systems
 - [ ] Confirm the origin and rights of any included non-original assets
 - [x] Capture screenshots and a short demonstration video of working mechanics
-- [x] Create a separate private clean-history portfolio repository
-- [ ] Confirm school-assignment timing and permissions before any public release
+- [x] Create a separate clean-history portfolio repository
+- [x] Repository made public by the owner
+- [ ] Confirm school-assignment timing and any applicable academic publication permissions (still unverified)
 
-**Keep private until explicitly approved.**
+**Status:** Public portfolio repository; outstanding rights and academic checks are documented above.
